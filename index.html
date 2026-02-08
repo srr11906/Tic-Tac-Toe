@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <div id="playerSetup">
+      <input type="text" id="playerO" placeholder="Player O name" />
+      <input type="text" id="playerX" placeholder="Player X name" />
+      <button id="startBtn">Start Game</button>
+    </div>
+    <p id="turnMsg"></p>
+    <div class="msgContainer hide">
+      <p id="msg"></p>
+      <button id="newBtn">New Game</button>
+    </div>
+    <main>
+      <section class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </section>
+      <button id="resetBtn">Reset</button>
+      <audio id="clickSound" src="ButtonClick.mp3"></audio>
+      <audio id="winSound" src="YouWon.wav"></audio>
+      <audio id="drawSound" src="GameDraw.wav"></audio>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
